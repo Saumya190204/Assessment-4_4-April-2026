@@ -3,11 +3,11 @@ from pages.login_page import LoginPage
 from utils.loggers import get_logger
 
 
-def test_valid_login(setup_and_teardown):
+def test_valid_login(setup_and_teardown):# Get driver from fixture
     driver = setup_and_teardown
 
-    lp = LoginPage(driver)
-
+    lp = LoginPage(driver) # Create object of LoginPage class
+    # Read data from env.yaml file
     config = ConfigReader.read_config()
     env = config['qa']
 
