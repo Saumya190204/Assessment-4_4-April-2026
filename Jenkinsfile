@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        PYTHON_PATH  = '"C:\Users\saumya\AppData\Local\Programs\Python\Python314\python.exe"'
+        PYTHON_PATH  = '"C:\\Users\\saumya\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"'
         VENV_DIR     = '.venv'
         REPORTS_DIR  = 'reports'
         TEST_DIR     = 'tests'
